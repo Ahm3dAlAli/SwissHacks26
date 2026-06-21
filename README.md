@@ -143,11 +143,11 @@ LIVE ↔ SIM is resolved **per network, per method** — never a global flip (se
 
 | Leg | Network | Status |
 |-----|---------|--------|
-| HQ → subsidiary `Payment` | Testnet | ✅ **LIVE** (with seeds + `LIVE_TESTNET=true`) |
-| Autonomous agent sweep `Payment` | Testnet | ✅ **LIVE** (agent regular key) |
-| XLS-65 vault create / deposit / withdraw | Devnet | ✅ **LIVE on Devnet** (with `DEVNET_LIVE=true`) |
-| XLS-66 credit lines (LoanBroker / LoanSet / LoanPay) | Devnet | ✅ **LIVE on Devnet** (with `DEVNET_LIVE=true`) |
-| Investment allocator | internal | ⚙️ SIM (no ledger primitive) |
+| HQ → subsidiary `Payment` | Testnet |  **LIVE** (with seeds + `LIVE_TESTNET=true`) |
+| Autonomous agent sweep `Payment` | Testnet |  **LIVE** (agent regular key) |
+| XLS-65 vault create / deposit / withdraw | Devnet |  **LIVE on Devnet** (with `DEVNET_LIVE=true`) |
+| XLS-66 credit lines (LoanBroker / LoanSet / LoanPay) | Devnet |  **LIVE on Devnet** (with `DEVNET_LIVE=true`) |
+| Investment allocator | internal |  SIM (no ledger primitive) |
 
 The XLS-65 vault and XLS-66 lending flows submit **real transactions to Devnet** via xrpl.js
 (see `apps/backend/src/services/vaultService.ts` and `apps/backend/src/xrpl/loanOps.ts`). They
