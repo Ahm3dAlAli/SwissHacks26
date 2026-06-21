@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output
+dist/
+build/
+*.tsbuildinfo
+
+# env & secrets — NEVER commit wallet seeds
+.env
+.env.local
+*.seed
+
+# database
+*.sqlite
+*.sqlite-journal
+*.db
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# vite
+apps/frontend/dist/
