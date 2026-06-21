@@ -1,4 +1,4 @@
-# ReduitTreasuries
+# TreasuryMind
 
 **A governed corporate-treasury operating layer on the XRPL.**
 
